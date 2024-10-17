@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="header text-center mb-4">
+            <h2>Form Validation</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-group">
+                <label for="uname">Full Name:</label>
+                <input type="text" class="form-control" placeholder="Enter your name" id="uname">
+                <div class="invalid-feedback">Error message</div>
+            </div>
+            <div class="form-group">
+                <label for="contact-phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="contact-phone" placeholder="Enter your Phone Number">
+                <div class="invalid-feedback">Error message</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" class="form-control" placeholder="abc@gmail.com" id="email">
+                <div class="invalid-feedback">Error message</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" placeholder="Enter strong password" id="password">
+                <div class="invalid-feedback">Error message</div>
+            </div>
+            <div class="form-group">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" class="form-control" placeholder="Confirm Password" id="cpassword">
+                <div class="invalid-feedback">Error message</div>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="tc">
+                <label class="form-check-label" for="tc">I agree to terms and conditions</label>
+                <div class="invalid-feedback">Error message</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="success-message" class="alert alert-success mt-4" style="display:none;">
+            <h4 class="alert-heading">Thank you!</h4>
+            <p>Form submitted successfully!</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
